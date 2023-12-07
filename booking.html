@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style 1.css">
+	<style>
+	#abc{
+  width:65%;
+  height:100px;
+}
+nav{
+  width: 155%;
+  height: 50px;
+  background-color: #0005;
+  line-height: 50px;
+}
+nav ul{
+float:left
+  margin-left: 30px;
+  font-size:20px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:#088;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+	</style>
+</head>
+<body>
+<div id="abc">
+    <nav>
+        <ul>
+            <li><a href="page1.html" class="active">Home</a></li>
+            <li><a href="Blogs.html">Blog</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+            <li><a href="booking.html"><u style="text-decoration-color:#ff3c78;text-decoration-thickness:7px;">Book</u></a></li>
+        </ul>
+    </nav>
+</div>
+<form>
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" placeholder="Your First Name" class="input" required>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" placeholder="Your Last Name" class="input" required>
+       </div> 
+       <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" placeholder="abc@gmail.com" class="input" required>
+       </div> 
+         <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="tel" class="input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Format: 123-456-7890">
+       </div> 	   
+        <div class="inputfield">
+          <label>Choose type of makeup</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="BM">Bridal Makeup</option>
+              <option value="RM">Retro Makeup</option>
+			  <option value="HM">Halloween Makeup</option>
+			   <option value="MM">Monochromatic Makeup</option>
+			   <option value="JM">Job Makeup</option>
+			   <option value="HDM">HD Makeup</option>
+			   <option value="PM">Pastel Makeup</option>
+			   <option value="Other">Other Makeup</option>
+            </select>
+          </div>
+       </div> 
+	   <div class="inputfield">
+          <label>Choose from our professionals</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="AK">Amrit Kaur</option>
+              <option value="B&D">Bharat and Dorris</option>
+			  <option value="BJ">Bijal Gada</option>
+			   <option value="CB">Cheragg Bambboat</option>
+			   <option value="DB">Daniel Bauer</option>
+			   <option value="NS">Namrata Soni</option>
+			   <option value="OR">Ojas Rajani</option>
+			   <option value="PG">Parul Garg</option>
+			   <option value="SMalhotra">Sahil Malhotra</option>
+			   <option value="SMuttathil">Shaan Muttathil</option>
+			   <option value="TC">Tejasvini Chander</option>
+			   <option value="VN">Vardan Nayak</option>
+            </select>
+          </div>
+       </div> 
+      
+      <div class="inputfield">
+          <label>Date of Appointment</label>
+          <input type="datetime-local" class="input">
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn">
+      </div>
+    </div>
+</div>	
+	</form>
+</body>
+</html>
